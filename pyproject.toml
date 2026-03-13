@@ -25,6 +25,7 @@ dependencies = [
 
     # Evaluation
     "scikit-learn>=1.5",
+    "rank-bm25>=0.2.2",
 
     # Utilities
     "python-dotenv>=1.0",

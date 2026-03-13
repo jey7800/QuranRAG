@@ -99,7 +99,14 @@ GRAPH_TOP_CONCEPTS = 3
 GRAPH_HOPS = 1
 
 # ── Benchmark ─────────────────────────────────────────────────────────────────
-EVAL_QUERIES_PATH = EVAL_DIR / "embedding_benchmark.json"
+EVAL_QUERIES_PATH = EVAL_DIR / "embedding_benchmark.json"  # legacy v1
+
+# New benchmark (v2)
+BENCHMARK_QUERIES_PATH = EVAL_DIR / "benchmark_queries.json"
+BENCHMARK_RESULTS_DIR = EVAL_DIR / "results"
+BENCHMARK_SEED = 42
+BENCHMARK_K_VALUES = [5, 10, 20]
+BENCHMARK_BOOTSTRAP_N = 1000
 
 # ── API settings ──────────────────────────────────────────────────────────────
 API_HOST = "0.0.0.0"
