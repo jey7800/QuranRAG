@@ -1,0 +1,37 @@
+# Data
+data/raw/
+data/processed/
+data/eval/results/
+data/qdrant_db/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+_plan_agent_output.md
+
+# Jupyter
+.ipynb_checkpoints/

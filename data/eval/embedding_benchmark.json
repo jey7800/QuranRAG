@@ -1,0 +1,110 @@
+{
+  "version": "1.0",
+  "description": "Intrinsic evaluation: query -> expected verse_ids for embedding quality assessment",
+  "queries": [
+    {
+      "query": "What does the Quran say about God's throne?",
+      "expected_verses": ["2:255", "7:54", "10:3", "20:5", "25:59"],
+      "tags": ["theology", "english"]
+    },
+    {
+      "query": "Story of Adam in the Quran",
+      "expected_verses": ["2:30", "2:31", "2:34", "7:11", "7:19", "20:115"],
+      "tags": ["narrative", "english"]
+    },
+    {
+      "query": "fasting rules in Ramadan",
+      "expected_verses": ["2:183", "2:184", "2:185", "2:187"],
+      "tags": ["jurisprudence", "english"]
+    },
+    {
+      "query": "patience and perseverance",
+      "expected_verses": ["2:153", "2:155", "3:200", "16:127", "39:10"],
+      "tags": ["ethics", "english"]
+    },
+    {
+      "query": "Story of Moses and Pharaoh",
+      "expected_verses": ["7:103", "7:104", "20:24", "26:10", "28:3", "28:4"],
+      "tags": ["narrative", "english"]
+    },
+    {
+      "query": "charity and giving to the poor",
+      "expected_verses": ["2:177", "2:215", "2:261", "2:274", "9:60"],
+      "tags": ["ethics", "english"]
+    },
+    {
+      "query": "creation of the heavens and the earth",
+      "expected_verses": ["2:117", "6:1", "21:30", "41:9", "41:10", "41:11", "41:12"],
+      "tags": ["cosmology", "english"]
+    },
+    {
+      "query": "Day of Judgment and resurrection",
+      "expected_verses": ["1:4", "75:1", "75:6", "82:1", "82:4", "99:1", "99:6"],
+      "tags": ["eschatology", "english"]
+    },
+    {
+      "query": "prayer and worship obligations",
+      "expected_verses": ["2:43", "2:238", "4:103", "11:114", "17:78", "20:14"],
+      "tags": ["worship", "english"]
+    },
+    {
+      "query": "marriage and family relations",
+      "expected_verses": ["2:221", "2:228", "2:233", "4:3", "4:34", "30:21"],
+      "tags": ["family-law", "english"]
+    },
+    {
+      "query": "divine mercy and forgiveness",
+      "expected_verses": ["1:1", "2:286", "3:135", "4:110", "39:53"],
+      "tags": ["theology", "english"]
+    },
+    {
+      "query": "Noah and the flood",
+      "expected_verses": ["11:36", "11:37", "11:40", "11:44", "23:27", "71:1"],
+      "tags": ["narrative", "english"]
+    },
+    {
+      "query": "prohibition of interest and usury",
+      "expected_verses": ["2:275", "2:276", "2:278", "2:279", "3:130"],
+      "tags": ["economics", "english"]
+    },
+    {
+      "query": "justice and fairness in dealings",
+      "expected_verses": ["4:58", "4:135", "5:8", "16:90", "49:9"],
+      "tags": ["ethics", "english"]
+    },
+    {
+      "query": "Mary and the birth of Jesus",
+      "expected_verses": ["3:42", "3:45", "3:47", "19:16", "19:22", "19:30"],
+      "tags": ["narrative", "english"]
+    },
+    {
+      "query": "Abraham and his faith",
+      "expected_verses": ["2:124", "2:127", "2:130", "6:74", "6:79", "14:35"],
+      "tags": ["narrative", "english"]
+    },
+    {
+      "query": "knowledge and learning",
+      "expected_verses": ["2:269", "20:114", "39:9", "58:11", "96:1", "96:4"],
+      "tags": ["education", "english"]
+    },
+    {
+      "query": "pilgrimage to Mecca Hajj",
+      "expected_verses": ["2:196", "2:197", "2:198", "3:97", "22:27"],
+      "tags": ["worship", "english"]
+    },
+    {
+      "query": "inheritance and distribution of wealth",
+      "expected_verses": ["4:7", "4:11", "4:12", "4:176"],
+      "tags": ["family-law", "english"]
+    },
+    {
+      "query": "light and guidance from God",
+      "expected_verses": ["2:257", "5:15", "24:35", "33:43", "57:28"],
+      "tags": ["theology", "english"]
+    }
+  ],
+  "metrics": {
+    "recall_at_k": [5, 10, 20],
+    "mrr": true
+  }
+}

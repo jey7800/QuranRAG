@@ -1,0 +1,55 @@
+[project]
+name = "quran-rag"
+version = "0.1.0"
+description = "Open-source RAG system for answering questions grounded in the Quran with verse citations"
+requires-python = ">=3.11"
+license = "MIT"
+
+dependencies = [
+    # Data processing
+    "httpx>=0.27",
+    "pdfplumber>=0.11",
+    "datasets>=3.0",
+    "pydantic>=2.0",
+    "tqdm>=4.66",
+
+    # Embedding & retrieval
+    "sentence-transformers>=3.0",
+    "qdrant-client>=1.12",
+    "networkx>=3.3",
+
+    # API & MCP
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+    "mcp>=1.0",
+
+    # Evaluation
+    "scikit-learn>=1.5",
+
+    # Utilities
+    "python-dotenv>=1.0",
+    "rich>=13.9",
+    "loguru>=0.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.8", "ipykernel>=6.29"]
+openai = ["openai>=1.50"]
+google = ["google-genai>=1.0"]
+flagembedding = ["FlagEmbedding>=1.2"]
+ragas = ["ragas>=0.2"]
+all = ["quran-rag[openai,google,flagembedding,ragas,dev]"]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
